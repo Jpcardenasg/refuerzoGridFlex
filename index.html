@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Refuerzo de Grid y Flex</title>
 </head>
 <body>
 
     <header>
-        <div class="logo"></div>
+        <div class="logo">Logo</div>
         <nav>
             <ul>
                 <li>Menú 1</li>
@@ -19,147 +20,153 @@
         </nav>
     </header>
 
-    <section id="producto-destacado">
-        <figure>
-            <img src="" alt="Aquí va la imagen">
-            <h2>Título producto destacado</h2>
-            <p>Parrafo</p>
-            <button>botón</button>
-        </figure>
-    </section>
+    <main>
+        <section id="producto-destacado">
+            <figure class="producto-destacado">
+                <img src="" alt="Aquí va la imagen">
+                <div class="producto-destacado__info">
+                    <div>
+                        <h2>Título producto destacado</h2>
+                        <p>Parrafo</p>
+                    </div>
+                    <button>botón</button>
+                </div>
+            </figure>
+        </section>
 
-    <section id="info-producto-destacado">
-        <figure>
-            <h2>Título producto</h2>
-            <img src="" alt="Aquí va la imagen">
-            <p>Parrafo</p>
-        </figure>
-    </section>
+        <section id="info-producto">
+            <figure class="info-producto">
+                <h2>Título producto</h2>
+                <img src="" alt="Aquí va la imagen">
+                <p>Parrafo</p>
+            </figure>
+        </section>
 
-    <section id="info-productos">
-        <h2>Título de productos</h2>
-        <article class="card-productos">
-            <img src="" alt="Aquí va la imagen">
-            <p>Parrafo</p>
-        </article>
-        <article class="card-productos">
-            <img src="" alt="Aquí va la imagen">
-            <p>Parrafo</p>
-        </article>
-        <article class="card-productos">
-            <img src="" alt="Aquí va la imagen">
-            <p>Parrafo</p>
-        </article>
-        <article class="card-productos">
-            <img src="" alt="Aquí va la imagen">
-            <p>Parrafo</p>
-        </article>
-    </section>
+        <section id="info-productos">
+            <div class="productos">
+                <h2>Título de productos</h2>
+                <article class="card-productos">
+                    <img src="" alt="Aquí va la imagen">
+                    <p>Parrafo</p>
+                </article>
+                <article class="card-productos">
+                    <img src="" alt="Aquí va la imagen">
+                    <p>Parrafo</p>
+                </article>
+                <article class="card-productos">
+                    <img src="" alt="Aquí va la imagen">
+                    <p>Parrafo</p>
+                </article>
+                <article class="card-productos">
+                    <img src="" alt="Aquí va la imagen">
+                    <p>Parrafo</p>
+                </article>
+            </div>
+        </section>
 
-    <section id="ficha-tecnica">
-        <h2>Título</h2>
-        <table>
-            <thead>
-                <th>Nombre Producto</th>
-                <th>Especificaciones</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Prodcuto 1</td>
-                    <td>Especificación del producto 1</td>
-                </tr>
-                <tr>
-                    <td>Prodcuto 1</td>
-                    <td>Especificación del producto 1</td>
-                </tr>
-                <tr>
-                    <td>Prodcuto 1</td>
-                    <td>Especificación del producto 1</td>
-                </tr>
-                <tr>
-                    <td>Prodcuto 1</td>
-                    <td>Especificación del producto 1</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="redes-sociales">
-            <div>red social 1</div>
-            <div>red social 2</div>
-            <div>red social 3</div>
-            <div>red social 4</div>
-        </div>
-    </section>
+        <section id="ficha-tecnica">
+            <h2>Título</h2>
+            <table>
+                <thead>
+                    <th>Nombre Producto</th>
+                    <th>Especificaciones</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Prodcuto 1</td>
+                        <td>Especificación del producto 1</td>
+                    </tr>
+                    <tr>
+                        <td>Prodcuto 1</td>
+                        <td>Especificación del producto 1</td>
+                    </tr>
+                    <tr>
+                        <td>Prodcuto 1</td>
+                        <td>Especificación del producto 1</td>
+                    </tr>
+                    <tr>
+                        <td>Prodcuto 1</td>
+                        <td>Especificación del producto 1</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="redes-sociales">
+                <div>red social 1</div>
+                <div>red social 2</div>
+                <div>red social 3</div>
+                <div>red social 4</div>
+            </div>
+        </section>
 
-    <div class="ubicacion-tienda">
-        <span>Google Maps</span>
-        <iframe src="" frameborder="0"></iframe>
-    </div>
-
-    <div class="formulario-contacto">
-        <h2>Título Formulario</h2>
-        <p>Parrafo formulario</p>
-        <form action="">
-            <label for="nombre">Nombre</label>
-            <input type="text" placeholder="Nombre Completo">
-
-            <label for="email">Email</label>
-            <input type="email" placeholder="Email">
-
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
-
-            <button type="submit">Enviar</button>
-
-        </form>
-    </div>
-
-    <section>
-        <div class="logos-empresas">
-            <div class="logo-empresas">Logo 1</div>
-            <div class="logo-empresas">Logo 2</div>
-            <div class="logo-empresas">Logo 3</div>
-            <div class="logo-empresas">Logo 4</div>
+        <div class="ubicacion-tienda">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6489.555400043863!2d-120.4254188920959!3d37.36493335851793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809146ac0c97b9d5%3A0xcc8a56b52388a814!2sUniversity%20of%20California%20Merced!5e0!3m2!1ses-419!2sco!4v1706105551475!5m2!1ses-419!2sco" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
 
-        <div class="info-empresas">
-            <article>
-                <h3>Empresa 1</h3>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Empresa 2</h3>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Empresa 3</h3>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Empresa 4</h3>
-                <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
-                    <li>Item 4</li>
-                </ul>
-            </article>
+        <div class="formulario-contacto">
+            <h2>Título Formulario</h2>
+            <p>Parrafo formulario</p>
+            <form action="" class="formulario-contacto__form">
+                <input type="text" placeholder="Nombre Completo">
+                <input type="email" placeholder="Email">
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-    </section>
+        <section>
+            <div class="logos-empresas">
+                <div class="logo-empresas">Logo 1</div>
+                <div class="logo-empresas">Logo 2</div>
+                <div class="logo-empresas">Logo 3</div>
+                <div class="logo-empresas">Logo 4</div>
+            </div>
+            <div class="info-empresas">
+                <article>
+                    <h3>Empresa 1</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Empresa 2</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Empresa 3</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Empresa 4</h3>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
 
     <footer>
         Aquí va el footer
