@@ -1,38 +1,57 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
     width: 100%;
+    max-width: 1200px;
     height: 100vh;
     padding: 20px;
+    margin: auto;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 16px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho por defecto */
-    grid-template-rows: auto auto auto; /* Tres filas automáticas por defecto */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     row-gap: 20px;
 }
 
-.logo {
-    margin: 20px 0;
-}
-
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
 }
 
 #producto-destacado {
@@ -58,13 +77,96 @@ nav ul {
 }
 
 #ficha-tecnica {
+    height: 670px;
     grid-row: span 2;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.tabla {
+    overflow-y: scroll;
+    height: 55%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes-sociales i {
+    font-size: 24px;
+    color: #3498db;
+    margin-right: 15px;
+}
+
+i:hover {
+    background-color: #f5f5f5;
+}
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .formulario-contacto__form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+#empresas-asociadas {
+    grid-column: span 2;
+}
+
+.logos-empresas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.logo-empresas {
+    width: 80px;
+    height: 80px;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-empresas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: #fff;
 }
