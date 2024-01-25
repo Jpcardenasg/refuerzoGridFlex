@@ -55,12 +55,9 @@ section {
 }
 
 #producto-destacado {
+    height: 30vh;
     grid-column: span 2;
-}
-
-.producto-destacado {
-    display: flex;
-    justify-content: space-around;
+    background-image: url(https://www.rdstation.com/blog/wp-content/uploads/sites/2/2019/02/url-amigable.jpg);
 }
 
 .producto-destacado__info {
@@ -74,6 +71,27 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: 100%;
+}
+
+.productos {
+    height: auto;
+    margin-top: 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-productos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+    & p {
+        text-wrap: balance;
+    }
 }
 
 #ficha-tecnica {
