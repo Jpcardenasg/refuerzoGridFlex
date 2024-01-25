@@ -58,6 +58,8 @@ section {
     height: 30vh;
     grid-column: span 2;
     background-image: url(https://www.rdstation.com/blog/wp-content/uploads/sites/2/2019/02/url-amigable.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .producto-destacado__info {
@@ -75,7 +77,7 @@ section {
 }
 
 .productos {
-    height: auto;
+    height: 60%;
     margin-top: 20px;
     overflow-y: scroll;
     display: flex;
